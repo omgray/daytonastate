@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Exam 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Display the header above the navbar */
+    body {
+        overflow-x: hidden;
+    }
+    .header, .header div {
+        background-color: #555;
+        padding: 10px;
+    }
+    .header-m {
+        background-color: rgb(38, 0, 255);
+        padding: 10px 50px;
+        color: white;
+        text-align: center;
+    }
+    .header-m button {
+        background-color: rgb(0, 17, 255);
+    }
+    .center {
+        display: block;
+        margin: 0 auto;
+    }
+    .right {
+        display: flex;
+        justify-content: flex-end;
+        text-align: right;
+    }
+    .right img {
+        display: inline-block;
+        top: 100px;
+    }
+    .info, .info a {
+        display: inline-block;
+        color: white;
+        padding: 0 15px;
+    }
+    .info h3 {
+        margin: 0;
+    }
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: rgb(60, 154, 243);
+      width: 100%;
+      border-style: none;
+      min-height: 0;
+    }
+    .navbar a {
+        color: white;
+    }
+    .navbar a:hover {
+        color: rgb(0, 132, 255);
+    }
+    .nav {
+        text-align: center;
+    }
+    .nav li {
+        display: inline-block;
+    }
+    .comp {
+        width: 100%;
+    }
+    .col-sm-4 img {
+        max-height: 50px;
+    }
+    form p {
+        color: white;
+    }
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 200%;
+    }
+    .icon-bar {
+        background-color: rgb(255, 255, 255);
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+      font-size: 1.2rem;
+    }
+    footer a {
+        color: rgb(146, 215, 255);
+    }
+    footer span {
+        padding: 0px 15px;
+    }
+    footer a:hover {
+        color: rgb(146, 215, 255, 0.7);
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+<!-- Header -->
+<div class="row header hidden-xs hidden-sm">
+    <div class="col-sm-6">
+        <img src="logo.png" alt="">
+    </div>
+    <div class="col-sm-6 right">
+        <form action="">
+            <p>Explore Daytona State</p>
+            <input type="text"><button type="submit">Submit</button> <br>
+            <span class="info"><h3><a href="#">Apply Now</a></h3></span>
+            <span class="info"><h3>(386) 506-3000</h3></span>
+            <img src="mydaytonastatetop.png" alt="">
+        </form>
+    </div>
+</div>
+<!-- Mobile version of header -->
+<div class="row visible-xs visible-sm">
+    <div class="col-sm-12 header">
+        <img class="center" src="logo.png" alt="">
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 header-m visible-xs visible-sm center">
+            <p>Explore Daytona State</p>
+            <input type="text"><button type="submit">Submit</button> <br>
+    </div>
+</div>
+<div class="row">
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>  
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav">
+        <li><a href="#">Admission</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Athletics</a></li>
+        <li><a href="#">Student Life</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Faculty/Staff</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+</div>
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Contacts</a></p>
+      <p><a href="#">Faculty</a></p>
+      <p><a href="#">Programs</a></p>
+      <p><a href="#">Documents</a></p>
+      <p><a href="#">Pathways</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>School Of Computer Science</h1>
+      <img src="computerscience.jpg" alt="" class="comp">
+      <p>While the computing field is one of the fastest growing segments of industry, it is also one of the fastest changing areas technologically. Computing professionals’ education does not stop with the college degree, but continues with seminars, conferences, and advanced courses and training. In computer theory and applications, new ideas are developed every day. Success requires an ongoing commitment to learning to maintain knowledge, skills and career opportunities.</p>
+      <p>Daytona State College is the perfect place to start preparing for a career in the computer science and information technology fields. With more than a dozen programs from which to choose, you can be sure to get started on the right track.</p>
+      <p>Most programs also are transferable, allowing you to advance your studies to higher levels, including the Daytona State College Bachelor of Science in Engineering Technology, which you can earn in only two years after completing your associate of science degree. Daytona State College also has articulation agreements with other four-year institutions that will apply your AS degree credits toward a bachelor’s degree.</p>
+      <p>For more information visit the <a href="#">Computer Science website.</a></p>
+      <hr>
+      <h2>Gainful Employment Information</h2>
+      <p>The U.S. Department of Education requires colleges to disclose a variety of information for any financial aid eligible program that “prepares students for gainful employment in a recognized occupation.” The information provided here describes the graduation rates, the median debt of students who completed the program and other important information regarding gainful employment for the latest completed academic year (as of July 1).</p>
+      <ul>
+          <li><a href="">Computer Programming</a></li>
+          <li><a href="">Information Technology Analysis</a></li>
+          <li><a href="">Information Technology Management</a> (Network Server Administration)</li>
+          <li><a href="">Network System Developer</a> (Advanced Network Infrastructure)</li>
+          <li><a href="">Web Development Specialist</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+          <p>Ads</p>
+      </div>
+      <div class="well">
+          <p>Ads</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+<footer class="container-fluid">
+<div class="col-sm-8">
+    <p> 
+        <span><a href="">©2010 Daytona State College</a></span>
+        <span><a href="">Accessibility</a></span>
+        <span><a href="">Contact DSC</a></span>
+        <span><a href="">Campuses</a></span>
+        <span><a href="">Non Discrimination</a></span>
+        <span><a href="">Privacy Policy</a></span>
+        <span><a href="">Web Help</a></span>
+    </p>
+    <p>
+        <span>Daytona State College 1200 W. International Speedway Blvd., Daytona Beach, Florida 32114 (386) 506-3000</span>
+    </p>
+    <p>
+        <span>Daytona State College is an equal opportunity institution.
+        </span>
+    </p>
+    <p>
+        <span>
+            If you are having any difficulty accessing our website, please contact the help desk at (386) 506-3950 or helpdesk@daytonastate.edu. 
+        </span>
+    </p>
+</div>
+<div class="col-sm-4">
+    <a href=""><img src="icon1fb.png" alt=""></a>
+    <a href=""><img src="icon2tw.png" alt=""></a>
+    <a href=""><img src="icon3yt.png" alt=""></a>
+    <a href=""><img src="icon4li.png" alt=""></a>
+    <a href=""><img src="icon5ig.png" alt=""></a>
+
+</div>
+</footer>
+</div>
+</body>
+</html>
